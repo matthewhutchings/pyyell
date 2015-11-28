@@ -22,23 +22,22 @@ x = 1
 		
 		
 for row in dom.cssselect('div.businessCapsule-fle'):
-		    
 	x += 1
 		    
-		id = x
-		name = str(row.cssselect('div.businessCapsule--title')[0].text_content())
-		telephone = str(row.cssselect('div.businessCapsule--telephone')[0].text_content())
-		address = str(row.cssselect('div.businessCapsule--address')[0].text_content())
+	id = x
+	name = str(row.cssselect('div.businessCapsule--title')[0].text_content())
+	telephone = str(row.cssselect('div.businessCapsule--telephone')[0].text_content())
+	address = str(row.cssselect('div.businessCapsule--address')[0].text_content())
 		       
 		    
-		    teamItem = {
-		    'id':id,
-		    'name':name,
-		    'telephone':telephone,
-		    'address':address
-			}
+	teamItem = {
+	'id':id,
+	'name':name,
+	'telephone':telephone,
+	'address':address
+	}
 		    
-		    premierLeagueData.append(teamItem)
+	premierLeagueData.append(teamItem)
 		
 			if len(premierLeagueData) > 0:
 		    #truncate data store

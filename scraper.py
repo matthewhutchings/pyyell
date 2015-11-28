@@ -27,7 +27,7 @@ if len(premierLeagueData) > 0:
     scraperwiki.sql.execute("DROP TABLE IF EXISTS `swdata`")
     #add each table line to data store
     for teamItem in premierLeagueData:
-        scraperwiki.sql.save(['team'], teamItem)
+        scraperwiki.sql.save(['data'], teamItem)
 
 
 

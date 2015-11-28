@@ -5,10 +5,9 @@ import scraperwiki
 
 
 
-train = 1, 2, 3
+train = "1", "2", "3"
 for name in train:
-    value = name * 10
-    print value
+    print name
     
 url = 'https://www.yell.com/ucs/UcsSearchAction.do?keywords=pizza&location=southampton&scrambleSeed=833794509&pageNum'+name  
  

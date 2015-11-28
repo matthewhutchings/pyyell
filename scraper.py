@@ -4,9 +4,10 @@ import lxml.html
 import scraperwiki
 
 
-
-for x in range(0, 3):
-    print "We're on time %d" % (x)
+train = 1, 2, 3
+for name in train:
+    value = name * 10
+    print value
 
  
 		html = requests.get('https://www.yell.com/ucs/UcsSearchAction.do?keywords=pizza&location=southampton&scrambleSeed=833794509', headers={"User-Agent":"Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.101 Safari/537.36"}).content

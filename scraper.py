@@ -3,9 +3,7 @@ import requests
 import lxml.html
 import scraperwiki
 
-scraperwiki.sql.execute("DROP TABLE IF EXISTS `data`")
-
-html = requests.get('https://www.yell.com/ucs/UcsSearchAction.do?keywords=pizza&location=southampton&scrambleSeed=833794509').content
+html = requests.get('https://www.yell.com/ucs/UcsSearchAction.do?keywords=pizza&location=southampton&scrambleSeed=833794509', headers={"User-Agent":"Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.101 Safari/537.36"}).content
 
 dom = lxml.html.fromstring(html)
 

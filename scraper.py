@@ -4,24 +4,24 @@ import lxml.html
 import scraperwiki
 
 
+
 train = 1, 2, 3
 for name in train:
     value = name * 10
     print value
-
  
 html = requests.get('https://www.yell.com/ucs/UcsSearchAction.do?keywords=pizza&location=southampton&scrambleSeed=833794509', headers={"User-Agent":"Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.101 Safari/537.36"}).content
 		
-dom = lxml.html.fromstring(html)
+	dom = lxml.html.fromstring(html)
 		
-premierLeagueData = []
+	premierLeagueData = []
 		
-x = 1
-		
-		
+	x = 1
 		
 		
-		for row in dom.cssselect('div.businessCapsule-fle'):
+		
+		
+	for row in dom.cssselect('div.businessCapsule-fle'):
 		    
 		    x += 1
 		    

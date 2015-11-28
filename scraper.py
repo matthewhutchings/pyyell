@@ -9,16 +9,19 @@ dom = lxml.html.fromstring(html)
 
 premierLeagueData = []
 
+x = 1
+
 for row in dom.cssselect('div.businessCapsule-fle'):
     
+    x += 1
     
-    
-    pos = str(row.cssselect('div.col-sm-24')[0].text_content())
+    team = x
+    pos = string(row.cssselect('div.col-sm-24')[0].text_content())
     
     
        
     
-    teamItem = {'pos':pos}
+    teamItem = {'pos':pos, 'team':team}
     
     premierLeagueData.append(teamItem)
 
@@ -27,7 +30,6 @@ if len(premierLeagueData) > 0:
     scraperwiki.sql.execute("DROP TABLE IF EXISTS `swdata`")
     #add each table line to data store
     for teamItem in premierLeagueData:
-        scraperwiki.sql.save(teamItem)
-
+ scraperwiki.sql.save(['team'], teamItem)
 
 

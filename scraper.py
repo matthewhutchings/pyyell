@@ -16,7 +16,7 @@ for row in dom.cssselect('div.businessCapsule-fle'):
     x += 1
     
     team = x
-    pos = string(row.cssselect('div.col-sm-24')[0].text_content())
+    pos = str(row.cssselect('div.col-sm-24')[0].text_content())
     
     
        

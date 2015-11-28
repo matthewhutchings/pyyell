@@ -15,13 +15,18 @@ for row in dom.cssselect('div.businessCapsule-fle'):
     
     x += 1
     
-    team = x
-    pos = str(row.cssselect('div.col-sm-24')[0].text_content())
-    
-    
+    id = x
+    name = str(row.cssselect('div.businessCapsule--title')[0].text_content())
+    telephone = str(row.cssselect('div.businessCapsule--telephone')[0].text_content())
+    address = str(row.cssselect('div.businessCapsule--address')[0].text_content())
        
     
-    teamItem = {'pos':pos, 'team':team}
+    teamItem = {
+    'id':id,
+    'name':name,
+    'telephone':telephone,
+    'address':address
+     }
     
     premierLeagueData.append(teamItem)
 
@@ -30,6 +35,6 @@ if len(premierLeagueData) > 0:
     scraperwiki.sql.execute("DROP TABLE IF EXISTS `swdata`")
     #add each table line to data store
     for teamItem in premierLeagueData:
-        scraperwiki.sql.save(['team'], teamItem)
+        scraperwiki.sql.save(['id'], teamItem)
 
 

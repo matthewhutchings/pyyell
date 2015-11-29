@@ -5,7 +5,7 @@ import scraperwiki
 
 
 query = "electrician", "solar", "gym"
-for search in guery:
+for search in query:
 
 	train = "1", "2", "3"
 	for name in train:

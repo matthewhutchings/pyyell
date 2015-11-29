@@ -16,8 +16,6 @@ for name in train:
 	dom = lxml.html.fromstring(html)
 	premierLeagueData = []
 	
-	print html
-			
 	x = 1
 					
 	for row in dom.cssselect('div.businessCapsule-fle'):

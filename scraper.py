@@ -2,12 +2,14 @@
 import requests
 import lxml.html
 import scraperwiki
+import options
+
 
 
 locations = "poole", "bournemouth", "swanage" , "wareham"
 for search_location in locations:
 
-	query = "electrician", "solar", "gym"
+	query = options.business_options
 	for search in query:
 	
 		train = "1", "2", "3", "4","5","6","7","8","9"

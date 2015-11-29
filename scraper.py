@@ -39,12 +39,6 @@ for name in train:
 		}
 			    
 		premierLeagueData.append(teamItem)
-			
-		if len(premierLeagueData) > 0:
-			#truncate data store
-			scraperwiki.sql.execute("DROP TABLE IF EXISTS `data`")
-			#add each table line to data store
-		for teamItem in premierLeagueData:
-			scraperwiki.sql.save(['id'], teamItem)
+		scraperwiki.sql.save(['id'], teamItem)
 	
 	

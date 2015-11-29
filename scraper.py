@@ -12,12 +12,11 @@ for search in query:
 	
 		url = 'http://www.yell.com/ucs/UcsSearchAction.do?keywords='+search+'&location=poole&scrambleSeed=833794509&pageNum='+name  
 	 
+	 	print url
 	
 	 	html = requests.get(url, headers={"User-Agent":"Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.101 Safari/537.36"}).content
 		dom = lxml.html.fromstring(html)
 		premierLeagueData = []
-		
-		print html
 		
 		x = 1
 						

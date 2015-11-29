@@ -49,6 +49,10 @@ for search_location in locations:
 				print teamItem
 				
 				print "test"
+				
+			else:
+			 print html
+			 break
 
 
 if len(premierLeagueData) > 0:

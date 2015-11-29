@@ -41,6 +41,8 @@ for name in train:
 		premierLeagueData.append(teamItem)
 		
 		print teamItem
+		
+		print "test"
 
 
 if len(premierLeagueData) > 0:

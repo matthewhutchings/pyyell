@@ -38,7 +38,7 @@ for name in train:
 		'telephone':telephone,
 		'address':address
 		}
-		 premierLeagueData.append(teamItem)	    
+		premierLeagueData.append(teamItem)	    
 
 		if len(premierLeagueData) > 0:
 			#truncate data store

@@ -44,7 +44,7 @@ for search_location in locations:
 				'id':id,
 				'name':name,
 				'telephone':telephone,
-				'address':address
+				'address':address,
 				'location': search_location,
 				'term': search
 				}

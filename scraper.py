@@ -3,8 +3,6 @@ import requests
 import lxml.html
 import scraperwiki
 
-scraperwiki.sql.execute("DROP TABLE IF EXISTS `swdata`")
-scraperwiki.sql.execute("DROP TABLE IF EXISTS `data`")
 
 train = "1", "2", "3"
 for name in train:
@@ -40,6 +38,7 @@ for name in train:
 		}
 			    
 		premierLeagueData.append(teamItem)
-		scraperwiki.sql.save(['id'], teamItem)
-	
+		for teamItem in premierLeagueData:
+			scraperwiki.sql.save(['id'], teamItem)
+
 	

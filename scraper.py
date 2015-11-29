@@ -38,7 +38,9 @@ for name in train:
 		'telephone':telephone,
 		'address':address
 		}
-		premierLeagueData.append(teamItem)	    
+		premierLeagueData.append(teamItem)
+		
+		print teamItem
 
 
 if len(premierLeagueData) > 0:

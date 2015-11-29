@@ -15,12 +15,7 @@ for name in train:
  	print url
  	
  	html = requests.get(url, headers={"User-Agent":"Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.101 Safari/537.36"}).content
-	
-	
 	dom = lxml.html.fromstring(html)
-	
-	print dom.headers
-		
 	premierLeagueData = []
 			
 	x = 1
@@ -30,6 +25,9 @@ for name in train:
 			    
 		id = x
 		name = str(row.cssselect('div.businessCapsule--title')[0].text_content())
+		
+		print name 
+		
 		telephone = str(row.cssselect('div.businessCapsule--telephone')[0].text_content())
 		address = str(row.cssselect('div.businessCapsule--address')[0].text_content())
 			       

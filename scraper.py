@@ -3,13 +3,15 @@ import requests
 import lxml.html
 import scraperwiki
 
+	scraperwiki.sql.execute("DROP TABLE IF EXISTS `swdata`")
+	scraperwiki.sql.execute("DROP TABLE IF EXISTS `data`")
 
 
 train = "1", "2", "3"
 for name in train:
 	print name
 	
-	url = 'https://www.yell.com/ucs/UcsSearchAction.do?keywords=pizza&location=southampton&scrambleSeed=833794509&pageNum'+name  
+	url = 'https://www.yell.com/ucs/UcsSearchAction.do?keywords=pizza&location=southampton&scrambleSeed=833794509&pageNum='+name  
  
  	print url
  	

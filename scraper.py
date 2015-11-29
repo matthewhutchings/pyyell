@@ -22,7 +22,7 @@ for search_location in locations:
 			dom = lxml.html.fromstring(html)
 			premierLeagueData = []
 			
-			print "Searching for '"+search+"' in "+search_location+" Page:"+page
+			print "Searching for '"+search+"' in "+search_location+" Page:"+name
 
 			x = 1
 							

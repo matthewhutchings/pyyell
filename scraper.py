@@ -4,7 +4,6 @@ import lxml.html
 import scraperwiki
 import options
 
-
 # Set the locations of the search
 locations = "poole", "bournemouth", "swanage" , "wareham"
 for search_location in locations:
@@ -64,6 +63,3 @@ if len(premierLeagueData) > 0:
 	#add each table line to data store
 for teamItem in premierLeagueData:
 	scraperwiki.sql.save(['id'], teamItem)
-
-
-	

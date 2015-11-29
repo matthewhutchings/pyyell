@@ -31,12 +31,11 @@ for search_location in locations:
 			# Search the DOM for the following query			
 			for row in dom.cssselect('div.businessCapsule-fle'):
 				x += 1
-				
 				print "Found: "+x
-					    
+				
+				# DEFINE THE SECTIONS - NEEDS WORK	    
 				id = x
 				name = str(row.cssselect('div.businessCapsule--title')[0].text_content())
-				
 				telephone = str(row.cssselect('div.businessCapsule--telephone')[0].text_content())
 				address = str(row.cssselect('div.businessCapsule--address')[0].text_content())
 					       
@@ -46,6 +45,8 @@ for search_location in locations:
 				'name':name,
 				'telephone':telephone,
 				'address':address
+				'location': search_location,
+				'term': search
 				}
 				# Add the item to the array
 				premierLeagueData.append(teamItem)

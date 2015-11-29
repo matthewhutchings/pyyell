@@ -8,7 +8,7 @@ train = "1", "2", "3"
 for name in train:
 	print name
 	
-	url = 'https://www.yell.com/ucs/UcsSearchAction.do?keywords=pizza&location=southampton&scrambleSeed=833794509&pageNum='+name  
+	url = 'http://www.yell.com/ucs/UcsSearchAction.do?keywords=pizza&location=southampton&scrambleSeed=833794509&pageNum='+name  
  
  	print url
  	

@@ -3,9 +3,8 @@ import requests
 import lxml.html
 import scraperwiki
 
-	scraperwiki.sql.execute("DROP TABLE IF EXISTS `swdata`")
-	scraperwiki.sql.execute("DROP TABLE IF EXISTS `data`")
-
+scraperwiki.sql.execute("DROP TABLE IF EXISTS `swdata`")
+scraperwiki.sql.execute("DROP TABLE IF EXISTS `data`")
 
 train = "1", "2", "3"
 for name in train:

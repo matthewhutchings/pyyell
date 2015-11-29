@@ -10,7 +10,7 @@ for search_location in locations:
 	query = "electrician", "solar", "gym"
 	for search in query:
 	
-		train = "1", "2", "3"
+		train = "1", "2", "3", "4","5","6","7","8","9"
 		for name in train:
 		
 			url = 'http://www.yell.com/ucs/UcsSearchAction.do?keywords='+search+'&location='+search_location+'&scrambleSeed=833794509&pageNum='+name  

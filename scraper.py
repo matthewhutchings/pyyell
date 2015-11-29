@@ -20,6 +20,8 @@ for name in train:
 					
 	for row in dom.cssselect('div.businessCapsule-fle'):
 		x += 1
+		
+		print x
 			    
 		id = x
 		name = str(row.cssselect('div.businessCapsule--title')[0].text_content())

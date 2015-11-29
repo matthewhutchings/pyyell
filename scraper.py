@@ -52,7 +52,7 @@ for search_location in locations:
 				
 			else:
 			 print html
-			 break
+			 quit()
 
 
 if len(premierLeagueData) > 0:

@@ -8,12 +8,15 @@ import options
 # Set the locations of the search
 locations = "poole", "bournemouth", "swanage" , "wareham"
 for search_location in locations:
+	
 	# Choose the search tersm from options.py
 	query = options.business_options
 	for search in query:
+		
 		# Defin the page numbers to search
 		train = "1", "2", "3", "4","5","6","7","8","9"
 		for name in train:
+			
 			# Create the URL to search
 			url = 'http://www.yell.com/ucs/UcsSearchAction.do?keywords='+search+'&location='+search_location+'&scrambleSeed=833794509&pageNum='+name  
 
@@ -49,9 +52,7 @@ for search_location in locations:
 				premierLeagueData.append(teamItem)
 				
 				print teamItem
-				
-				print "test"
-			
+
 			else:
 			# If the query is not found, we have an issue.
 			 print html

@@ -18,7 +18,7 @@ for search_location in locations:
 			url = 'http://www.yell.com/ucs/UcsSearchAction.do?keywords='+search+'&location='+search_location+'&scrambleSeed=833794509&pageNum='+name  
 		 
 
-		 	html = requests.get(url, headers={"User-Agent":"Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.101 Safari/537.36"}).content
+		 	html = requests.get(url, headers={"User-Agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:42.0) Gecko/20100101 Firefox/42.0"}).content
 			dom = lxml.html.fromstring(html)
 			premierLeagueData = []
 			

@@ -31,7 +31,8 @@ for search_location in locations:
 			# Search the DOM for the following query			
 			for row in dom.cssselect('div.businessCapsule-fle'):
 				x += 1
-				print "Found: "+x
+				print "Found:"
+				print x
 				
 				# DEFINE THE SECTIONS - NEEDS WORK	    
 				id = x

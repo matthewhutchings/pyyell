@@ -52,7 +52,10 @@ for search_location in locations:
 				# Add the item to the array
 				premierLeagueData.append(teamItem)
 				
-			
+			else:
+			# If the query is not found, we have an issue.
+			 print html
+			 quit()
 
 			
 

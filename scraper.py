@@ -54,10 +54,7 @@ for search_location in locations:
 				
 			
 
-			else:
-			# If the query is not found, we have an issue.
-			# print html
-			 quit()
+			
 
 if len(premierLeagueData) > 0:
 	#truncate data store
